@@ -1,0 +1,157 @@
+/****************/
+/* Custom Fonts */
+/****************/
+@import url("https://p.typekit.net/p.css?s=1&k=chc7dqq&ht=tk&f=563.564&a=53222291&app=typekit&e=css");
+
+@font-face {
+	font-family:"mostra-nuova";
+	src:url("https://use.typekit.net/af/7a4dea/00000000000000003b9b4793/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/7a4dea/00000000000000003b9b4793/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/7a4dea/00000000000000003b9b4793/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+	font-family:"mostra-nuova";
+	src:url("https://use.typekit.net/af/d8512e/00000000000000003b9b4794/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/d8512e/00000000000000003b9b4794/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/d8512e/00000000000000003b9b4794/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display:auto;font-style:normal;font-weight:700;
+}
+
+
+
+/***********************/
+/* Basic General Style */
+/***********************/
+:root {
+	--blue: rgba(0, 128, 253, 1);
+	--darkBlue: rgba(0, 64, 121, 1)
+	
+	
+	
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: rgba(0, 0, 0, 1);
+	font-family: "mostra-nuova",sans-serif;
+}
+
+/******************/
+/* To Top Wrapper */
+/******************/
+.toTopWrapper {
+	display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transform: translate(0,-15px);
+    z-index: 100000;
+    text-align: center;
+}
+.toTopWrapper .toTop i {
+	font-size: 48px;
+	position: relative;
+	top: 50%;
+	transform: translate(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: var(--blue);
+    border: 2px solid rgb(0 0 0);
+    border-radius: 100%;
+	cursor: pointer;
+}
+
+
+/*******************/
+/* Header Parallax */
+/*******************/
+.header {
+	display: block;
+	width: 100%;
+	min-height: 350px;
+	max-height: 500px;
+	background: var(--blue);
+}
+
+
+/*********************/
+/* Menu under header */
+/*********************/
+/*.menuWrapper .menu .menuList {
+	position: relative;
+	left: 100%;
+	transform: translate(-100%,0);
+	width: 100%;
+}*/
+.menuWrapper .menu .menuList .menuList_item {
+	list-style-type: none;
+	display: inline-block;
+	min-width: 150px;
+	font-size: 26px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+.menuWrapper .menu .menuList {float:right;}
+.menuWrapper .menu .menuList .menuList_item a {
+	text-decoration: none;
+	color: var(--blue);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.menuWrapper .menu .menuList .menuList_item a:hover {
+	color: var(--darkBlue);
+}
+.menuWrapper .logo { max-width: 150px; }
+
+
+
+
+/******************/
+/* Content Tables */
+/******************/
+/*.tableContent, .tableContent .row, .tableContent .row .content {border: 1px dashed black;}*/
+.tableContent { 
+	width: 75%; 
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.tableContent .col { 
+	margin: 0;
+	padding: 0;
+}
+.tableContent { border-collapse: collapse; }
+.tableContent .content {
+	padding: 10px;
+	position: sticky;
+    bottom: 100%;
+	min-height: 750px;
+	max-height: 750px;
+}
+.tableContent .content .contentImg {
+	max-width: 600px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
