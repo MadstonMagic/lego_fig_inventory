@@ -369,6 +369,13 @@ div#imgLarge {
 	.link_custom_wrapper:hover .link_custom::before {
 		display: none;
 	}
+	
+	/* To Top */
+	.toTopWrapper .toTop i {
+		width: 100px;
+		height: 100px;
+		font-size: 92px;
+	}
 }
 @media only screen and (max-width: 1076px) {
 	.content-grid {margin-top: 5.5em;}
