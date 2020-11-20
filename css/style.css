@@ -335,14 +335,12 @@ div#imgLarge {
 /****************************/
 /* Smaller Screens + Mobile */
 /****************************/
-@media only screen and (min-device-width: 1076px) and (max-device-width: 1243px) {
-    img.logo { display:none; }
-}
-@media only screen and (min-device-width: 769px) and (max-device-width: 1170px) {
-    .posts-main-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+@media only screen and (max-width: 1243px) {img.logo { display:none; }}
+@media only screen and (max-device-width: 1243px) {img.logo { display:none; }}
+@media only screen and (min-width: 769px) and (max-width: 1170px) {.posts-main-container{grid-template-columns: repeat(2, 1fr);}}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1170px) {.posts-main-container{grid-template-columns: repeat(2, 1fr);}}
+
+@media only screen and (max-width: 768px) {.posts-main-container {grid-template-columns: 1fr;}}
 
 @media only screen and (max-device-width: 768px) {
     .posts-main-container{
@@ -359,12 +357,9 @@ div#imgLarge {
 	}
 	.mobile-menu .open-menu {
 		font-size: 48px;
-	}
-	
-	
-	
+	}	
 }
-@media only screen and (min-width: 769px) and (max-width: 1076px) {
+@media only screen and (max-width: 1076px) {
 	.content-grid {margin-top: 50px;}
     .menu {display:none;}
 	.mobile-menu-wrapper .mobile-menu, .sticky-mobile-menu-wrapper {display: block;}
