@@ -357,7 +357,10 @@ div#imgLarge {
 	}
 	.mobile-menu .open-menu {
 		font-size: 48px;
-	}	
+	}
+	.content-grid {
+		margin-top: 100px;
+	}
 }
 @media only screen and (max-width: 1076px) {
 	.content-grid {margin-top: 50px;}
