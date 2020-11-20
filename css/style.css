@@ -335,22 +335,22 @@ div#imgLarge {
 /****************************/
 /* Smaller Screens + Mobile */
 /****************************/
-@media screen and (min-width: 1076px) and (max-width: 1243px) {
+@media only screen and (min-width: 1076px) and (max-width: 1243px) {
     img.logo { display:none; }
 }
-@media screen and (max-width: 1170px) {
+@media only screen and (max-width: 1170px) {
     .posts-main-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 1076px) {
+@media only screen and (max-width: 1076px) {
 	.content-grid {margin-top: 50px;}
     .menu {display:none;}
 	.mobile-menu-wrapper .mobile-menu, .sticky-mobile-menu-wrapper {display: block;}
 	.sticky-mobile-menu-wrapper {background-color:var(--gray);}
 	.hiddenMobileSticky {display:none;}
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .posts-main-container{
         grid-template-columns: 1fr;
     }
