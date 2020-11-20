@@ -10,9 +10,11 @@
 
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="../portfolio/js/script.js"></script>
+		<script src="../portfolio/js/posts-filter-v1.0.js"></script>
 		
 		<link rel="stylesheet" href="../portfolio/css/style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<link rel="stylesheet" href="https://use.typekit.net/chc7dqq.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css">
 	</head>
 	
 	<!-- Body Content -->
@@ -20,13 +22,13 @@
 		<!-- To Top Button -->
 		<div class="toTopWrapper">
 			<div class="toTop">
-				<i class="fa-times fa"></i>
+				<i class="fa-angle-double-up fad"></i>
 			</div>
 		</div>
 		
 		<!-- Enlarged Image -->
-		<div id="img-large">
-			<img src="">
+		<div id="imgLarge">
+			<img class="imgMiddle" src="">
 			<p class="exit">
 				<i class="fa-times fa"></i>
 			</p>
@@ -35,110 +37,367 @@
 		
 		<!-- Header - Parallax -->
 		<div class="header">
-			<img alt="header" class="headerImg" src="../portfolio/images/header.png">
+			<div class="slide">
+				<div class="slider_content">
+					<h1>Daan Plekenpol - Portfolio</h1>
+					<p class="slider_text">Online: MadstonMagic<br><br></p>
+				</div>
+			</div>
 		</div>
 		<div class="menuWrapper">
 			<div class="menu">
-				<img alt="logo" class="logo" src="../portfolio/images/logo.png"></a>
+				<img alt="logo" class="logo" src="../portfolio/images/logo_900x409.png">
 				<ul class="menuList">
-					<li class="menuList_item"><a class="menuList_item_link">Laat alles zien</li>
-					<li class="menuList_item"><a class="menuList_item_link">Wapens</a></li>
-					<li class="menuList_item"><a class="menuList_item_link">Dieren/Monsters</a></li>
-					<li class="menuList_item"><a class="menuList_item_link">Meubels</a></li>
-					<li class="menuList_item"><a class="menuList_item_link">Planten</a></li>
-					<li class="menuList_item"><a class="menuList_item_link">Random</a></li>
-					<li class="menuList_item"><a class="menuList_item_link">Cinema 4D</a></li>
+					<li class="menuList_item translate"><img class="flag-translate english-us" src="https://www.flaticon.com/svg/static/icons/svg/555/555526.svg" alt="en_US">
+					<!--<img class="flag-translate dutch" src="https://www.flaticon.com/svg/static/icons/svg/555/555484.svg" alt="dutch">--></li>
+					<li class="menuList_item category-title cat_over_mij">Over mij</li>
+					<li class="menuList_item category-title cat_all">Laat alles zien</li>
+					<li class="menuList_item category-title cat_gun">Geweren</li>
+					<li class="menuList_item category-title cat_weapon">Wapens</li>
+					<li class="menuList_item category-title cat_animal_monster">Dieren/Monsters</li>
+					<li class="menuList_item category-title cat_misc">Overig</li>
+					<li class="menuList_item category-title cat_wavefront">Cinema 4D</li>
 				</ul>
+			</div>
+		</div>
+		<div class="stickyMenuWrapper">
+			<div class="menu">
+				<img alt="logo" class="logo" src="../portfolio/images/logo_900x409.png">
+				<ul class="menuList">
+					<li class="menuList_item translate"><img class="flag-translate english-us" src="https://www.flaticon.com/svg/static/icons/svg/555/555526.svg" alt="en_US">
+					<!--<img class="flag-translate dutch" src="https://www.flaticon.com/svg/static/icons/svg/555/555484.svg" alt="dutch">--></li>
+					<li class="menuList_item category-title cat_over_mij">Over mij</li>
+					<li class="menuList_item category-title cat_all">Laat alles zien</li>
+					<li class="menuList_item category-title cat_gun">Geweren</li>
+					<li class="menuList_item category-title cat_weapon">Wapens</li>
+					<li class="menuList_item category-title cat_animal_monster">Dieren/Monsters</li>
+					<li class="menuList_item category-title cat_misc">Overig</li>
+					<li class="menuList_item category-title cat_wavefront">Cinema 4D</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-menu-wrapper">
+			<div class="mobile-menu">
+				<ul class="menuList">
+					<li class="menuList_item category-title cat_over_mij">Over mij</li>
+					<li class="menuList_item category-title cat_all">Laat alles zien</li>
+					<li class="menuList_item category-title cat_gun">Geweren</li>
+					<li class="menuList_item category-title cat_weapon">Wapens</li>
+					<li class="menuList_item category-title cat_animal_monster">Dieren/Monsters</li>
+					<li class="menuList_item category-title cat_misc">Overig</li>
+					<li class="menuList_item category-title cat_wavefront">Cinema 4D</li>
+					<li class="menuList_item translate"><img class="flag-translate english-us" src="https://www.flaticon.com/svg/static/icons/svg/555/555526.svg" alt="en_US">
+					<!--<img class="flag-translate dutch" src="https://www.flaticon.com/svg/static/icons/svg/555/555484.svg" alt="dutch">--></li>
+				</ul>
+				<span class="open-menu"><i class="fa fa-bars"></i></span>
+			</div>
+		</div>
+		<div class="sticky-mobile-menu-wrapper hiddenMobileSticky">
+			<div class="mobile-menu">
+				<ul class="menuList">
+					<li class="menuList_item category-title cat_over_mij">Over mij</li>
+					<li class="menuList_item category-title cat_all">Laat alles zien</li>
+					<li class="menuList_item category-title cat_gun">Geweren</li>
+					<li class="menuList_item category-title cat_weapon">Wapens</li>
+					<li class="menuList_item category-title cat_animal_monster">Dieren/Monsters</li>
+					<li class="menuList_item category-title cat_misc">Overig</li>
+					<li class="menuList_item category-title cat_wavefront">Cinema 4D</li>
+					<li class="menuList_item translate"><img class="flag-translate english-us" src="https://www.flaticon.com/svg/static/icons/svg/555/555526.svg" alt="en_US">
+					<!--<img class="flag-translate dutch" src="https://www.flaticon.com/svg/static/icons/svg/555/555484.svg" alt="dutch">--></li>					
+				</ul>
+				<span class="open-menu"><i class="fa fa-bars"></i></span>
 			</div>
 		</div>
 		
 		<!---------------------->
 		<!-- Content Table #1 -->
 		<!---------------------->
-		<table class="tableContent">
-			<tr class="row row1">
-				<!-- Row 1 -->
-				<td class="col col1">
-					<div class="content" data-category="weapon">
-						<img class="contentImg" alt="contentImg" src="../portfolio/images/projects/weapons/zombies_raygun.png">
-						<div>
-						<h3>Raygun - Minecraft</h3>
+		<div class="over-mij-wrapper content-grid">
+			<div class="over-mij-container">
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Over Mij Post ----------------------->
+				<div class="over-mij single-post">
+
+					<div class="post-content">
+						<h1>Over mij - Daan</h1>
+						<p>
+							Ik ben Daan, 21 jaar met een diploma Applicatieontwikkeling op zak (vandaar deze custom website ook).
+							<br>
+							In het laatste jaar van mijn vorige MBO kwam ik er achter dat ik het maken van assets voor Games interessanter vond dan het programmeren van een game.
+							<br>
+							Destijds maakte we nog geen games maar dat kon je daarna wel op het HBO gaan doen.
+							<br>
+							<br>
+							Hoe kwam je in het laatste jaar er achter dat ik Game Art wilde doen vraag je je waarschijlijk af.. Nouuu....
+							<br>
+							<br>
+							Dat is opzich makkelijk uit te leggen, zoals je kan zien is dit een portfolio site voornamelijk gevuld met 3D modellen die gemaakt zijn voor de game Minecraft.
+							<br>
+							Deze modellen zijn een nachtmerrie voor de "echte" modelleurs, maar ja, je moet ergens beginnen.
+							<br>
+							Doordat ik het zo leuk vond om die modellen te maken en veel liever in mijn vrije tijd modellen ging maken dan dat ik iets ging programmeren, 
+							merkte ik al wel gauw dat Applicatieontwikkeling niet mijn goede keuze was.
+							<br>
+							<br>
+							Na 2 tussenjaren te hebben genomen waarin ik heb gewerkt als programmeur bij een klein reclame-bureau, heb ik toen besloten om me gewoon weer in te schrijven bij een MBO. 
+							Vandaar dat ik nu hier op school zit.
+							<br>
+							Hopelijk kan ik straks lekker in de rest van de schooltijd leren wat ik wil leren en straks met een team nieuwe originele games de wereld in brengen.
+						</p>
+					</div>
+					<div class="links_bottom">
+						<span class="link_custom_wrapper"><a href="https://www.planetminecraft.com/member/madstonmagic/submissions" class="link_custom" target="_blank">Mijn pagina waar ik gratis te downloaden projecten deel.</a></span>
+						<p style="font-size:14px;font-style:italic;">Hier staan dus ook projecten zoals Army 3D &amp; Pirate Swords Pack van een aantal jaar geleden. Dan kun je goed zien wat mijn groei is geweest in het maken van modellen voor Minecraft.</p>
+						<br>
+						<span class="link_custom_wrapper"><a href="https://discordapp.com/invite/npT2wBK" class="link_custom" target="_blank">Mijn discord waar ik met mijn klanten en "fans" klets.</a></span>
+						<p style="font-size:14px;font-style:italic;">Hier komen klanten van mij om met mij in contact te komen zodat ze modellen bij mij kunnen bestellen.</p>
+					</div>
+				<!-- End Over Mij #1 ------------------->
+				</div>
+			</div>
+		</div>
+		
+		<!---------------------->
+		<!-- Content Table #1 -->
+		<!---------------------->
+		<div class="posts-collection content-grid">
+			<div class="posts-main-container">
+			
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #1 ----------------------->
+				<div class="all gun single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/weapons/zombies_raygun.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Geweer</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>Raygun - Minecraft</h1>
 						<p>
 							De Raygun is een fictioneel wapen uit de Call OF Duty series.
 							<br>
-							Dit wapen werd gebruikt in de Zombies gamemode met hier en daar zijn verschijning in de story van bepaalde titels zoals <b>World At War</b>
+							Dit wapen werd gebruikt in de Zombies gamemode met hier en daar zijn verschijning in de story van bepaalde titels zoals <b>World At War</b>.
 							<br>
 							Dit model is daarom ook gemaakt voor een Zombie gamemode op een Minecraft server, waar je met meerdere spelers zo lang mogelijk in leven probeerd te blijven door de zombies (voor een 2e keer) te vermoorden.
+							<br>
+							Het model is te downloaden via onderstaande link. Het loopt nog niet zo goed, maar 1200 weergaven is redelijk.
 						</p>
-						</div>
 					</div>
-				</td>
-				<!-- Row 2 -->
-				<td class="col col2">
-					<div class="content" data-category="weapon">
-						<img class="contentImg" alt="contentImg" src="../portfolio/images/projects/weapons/zombies_barrett_50cal.png">
+					<div class="links_bottom">
+						<span class="link_custom_wrapper"><a href="https://www.planetminecraft.com/texture-pack/unofficial-hypixel-zombies-3d-guns-pack/" class="link_custom" target="_blank">Link naar de download</a></span>
+						<br>
+						<span class="link_custom_wrapper"><a href="https://hypixel.net/" class="link_custom" target="_blank">Link naar de server</a></span>
 					</div>
-				</td>
-				<!-- Row 3 -->
-				<td class="col col3">
-					<div class="content" data-category="weapon">
-						<img class="contentImg" alt="contentImg" src="../portfolio/images/projects/weapons/zombies_shotgun.png">
+				<!-- End Single Post #1 ------------------->
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #2 ----------------------->
+				<div class="all gun single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/weapons/zombies_barrett_50cal.png" alt="post">
 					</div>
-				</td>
-			</tr>
-		</table>
-		<!----------------------->
-		<!-- End Content Table -->
-		<!----------------------->
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		
+					
+					<div class="category-ribbon">
+						<span class="category-name">Geweer</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>Barrett .50 cal - Minecraft</h1>
+						<p>
+							De Barrett .50 Cal heb ik gemaakt voor hetzelfde project als de Raygun hiervoor.
+							<br>
+							Het is een sniper rifle die, zoals de naam zegt, 50 caliber patronen schiet.
+							<br>
+							<br>
+							Ik heb vaker geprobeerd dit geweer te maken maar deze is wel echt de beste van allen die ik heb gemaakt (Helaas heb ik geen plaatjes meer van de vorigen).
+						</p>
+					</div>
+					<div class="links_bottom">
+						<span class="link_custom_wrapper"><a href="https://www.planetminecraft.com/texture-pack/unofficial-hypixel-zombies-3d-guns-pack/" class="link_custom" target="_blank">Link naar de download</a></span>
+						<br>
+						<span class="link_custom_wrapper"><a href="https://hypixel.net/" class="link_custom" target="_blank">Link naar de server</a></span>
+					</div>
+				<!-- End Single Post #2 ------------------->
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #3 ----------------------->
+				<div class="all gun single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/weapons/zombies_shotgun.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Geweer</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>Fictionele Shotgun - Minecraft</h1>
+						<p>
+							Ook dit geweer is voor hetzelfde project als de Raygun en de Barrett .50 Cal.
+							<br>
+							Het is gebaseerd op een van de wapens uit Call Of Duty&trade; Black Ops 4, de <a href="https://static.wikia.nocookie.net/callofduty/images/2/27/MOG_12_menu_icon_BO4.png/revision/latest?cb=20181018203243" target="_blank" class="link_inline">MOG12</a>.
+							
+							
+						</p>
+					</div>
+					<div class="links_bottom">
+						<span class="link_custom_wrapper"><a href="https://www.planetminecraft.com/texture-pack/unofficial-hypixel-zombies-3d-guns-pack/" class="link_custom" target="_blank">Link naar de download</a></span>
+						<br>
+						<span class="link_custom_wrapper"><a href="https://hypixel.net/" class="link_custom" target="_blank">Link naar de server</a></span>
+					</div>
+				<!-- End Single Post #3 ------------------->
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #4 ----------------------->
+				<div class="all weapon single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/tool_weapons/dark_knight_sword.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Wapens</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>AK-47, Oud en Nieuw</h1>
+						<p>
+							AK47, dat was een van de eerste wapens die ik toen ik begon met het modeleren die ik had gemaakt.
+							<br>
+							Dat model werd destijds ook nog wel redelijk bekeken online, en mensen wilden graag zoiets in het spel zien.
+							<br>
+							<br>
+							De modellen hierboven zijn nog redelijk recent, de rode (bovenste) is van 2017, en de onderste is van vorig jaar.
+							<br>
+							De versie van vorig jaar is nog low-poly, ik heb nog een bestelling staan voor een hoger gedetailleerde versie maar die moet ik nog maken.
+							
+						</p>
+					</div>			
+				<!-- End Single Post #4 ------------------->				
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #5 ----------------------->
+				<div class="all weapon single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/tool_weapons/dragon_scale_bow.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Wapens</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>AK-47, Oud en Nieuw</h1>
+						<p>
+							AK47, dat was een van de eerste wapens die ik toen ik begon met het modeleren die ik had gemaakt.
+							<br>
+							Dat model werd destijds ook nog wel redelijk bekeken online, en mensen wilden graag zoiets in het spel zien.
+							<br>
+							<br>
+							De modellen hierboven zijn nog redelijk recent, de rode (bovenste) is van 2017, en de onderste is van vorig jaar.
+							<br>
+							De versie van vorig jaar is nog low-poly, ik heb nog een bestelling staan voor een hoger gedetailleerde versie maar die moet ik nog maken.
+							
+						</p>
+					</div>			
+				<!-- End Single Post #5 ------------------->				
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #6 ----------------------->
+				<div class="all gun single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/weapons/ak_47_old_new.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Geweer</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>AK-47, Oud en Nieuw</h1>
+						<p>
+							AK47, dat was een van de eerste wapens die ik heb gemaakt toen ik begon met modeleren.
+							<br>
+							Dat model werd destijds ook nog wel redelijk bekeken online, en mensen wilden graag zoiets in het spel zien.
+							<br>
+							<br>
+							De modellen hierboven zijn nog redelijk recent, de rode (bovenste) is van 2017, en de onderste is van vorig jaar.
+							<br>
+							De versie van vorig jaar is ook nog low-poly, ik heb nog een bestelling staan voor een hoger gedetailleerde versie maar die moet ik nog maken.
+							
+						</p>
+					</div>			
+				<!-- End Single Post #6 ------------------->				
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #7 ----------------------->
+				<div class="all weapon single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/tool_weapons/rune_sword.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Wapens</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>AK-47, Oud en Nieuw</h1>
+						<p>
+							AK47, dat was een van de eerste wapens die ik toen ik begon met het modeleren die ik had gemaakt.
+							<br>
+							Dat model werd destijds ook nog wel redelijk bekeken online, en mensen wilden graag zoiets in het spel zien.
+							<br>
+							<br>
+							De modellen hierboven zijn nog redelijk recent, de rode (bovenste) is van 2017, en de onderste is van vorig jaar.
+							<br>
+							De versie van vorig jaar is nog low-poly, ik heb nog een bestelling staan voor een hoger gedetailleerde versie maar die moet ik nog maken.
+							
+						</p>
+					</div>			
+				<!-- End Single Post #7 ------------------->				
+				</div>
+				
+				<!------------------------------------------------------------------------------------------->
+				<!-- Single Post #8 ----------------------->
+				<div class="all misc single-post">					
+					<div class="post-img">
+						<img class="content-img" src="../portfolio/images/projects/misc/persona.png" alt="post">
+					</div>
+					
+					<div class="category-ribbon">
+						<span class="category-name">Overig</span>					
+					</div>
+
+					<div class="post-content">
+						<h1>Persona Opdracht - LOB</h1>
+						<p>
+							Voor mijn Persona opdracht heb ik ook een website gemaakt.
+							<br>
+							Mijn gedachte achter het design van de site was als volgt: De gebruiker (klasgenoten in dit geval) kunnen zelf kiezen wat ze van me willen weten.
+							<br>
+							Er staan verschillende kopjes rondom mijn video in het midden, daar kan je op klikken, je krijgt dan een klein stukje tekst te zien.
+							Daarna kan je doorklikken om nog meer te lezen en te zien. Deze opdracht was eigenlijk ook een soort mini-portfolio.							
+						</p>
+					</div>
+					<div class="links_bottom">
+						<span class="link_custom_wrapper"><a href="https://madstonmagic.github.io/persona/" class="link_custom" target="_blank">Link naar de website</a></span>
+					</div>			
+				<!-- End Single Post #8 ------------------->				
+				</div>
+				
+			</div>
+		</div>
+		<!---------------------->
+		<!-- End Single Posts -->
+		<!---------------------->		
 	</body>
 </html>
