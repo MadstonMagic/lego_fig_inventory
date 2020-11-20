@@ -363,7 +363,7 @@ div#imgLarge {
 	}
 }
 @media only screen and (max-width: 1076px) {
-	.content-grid {margin-top: 50px;}
+	.content-grid {margin-top: 5.5em;}
     .menu {display:none;}
 	.mobile-menu-wrapper .mobile-menu, .sticky-mobile-menu-wrapper {display: block;}
 	.sticky-mobile-menu-wrapper {background-color:var(--gray);}
