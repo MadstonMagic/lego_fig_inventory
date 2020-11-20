@@ -361,6 +361,14 @@ div#imgLarge {
 	.content-grid {
 		margin-top: 100px;
 	}
+	
+	/*links*/
+	.link_custom_wrapper:hover .link_custom {
+		padding-left: 0px;	
+	}
+	.link_custom_wrapper:hover .link_custom::before {
+		display: none;
+	}
 }
 @media only screen and (max-width: 1076px) {
 	.content-grid {margin-top: 5.5em;}
