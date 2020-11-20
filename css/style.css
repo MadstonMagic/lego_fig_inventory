@@ -348,7 +348,7 @@ div#imgLarge {
     }
 	
 	/* Mobile Menu */
-	.mobile-menu-wrapper .mobile-menu .menuList .menuList_item, .sticky-mobile-menu-wrapper .menuList .menuList_item {
+	.mobile-menu-wrapper .mobile-menu .menuList .menuList_item, .sticky-mobile-menu-wrapper .mobile-menu .menuList .menuList_item {
 		font-size: 48px;
 		height: 62px;
 	}
