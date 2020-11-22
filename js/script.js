@@ -25,11 +25,20 @@ $(document).ready( function() {
 		
 		$('#imgLarge').fadeIn(300);
 		
+		
+		$('#imgLarge .background').on('click', function (){
+			closeImg();			
+		});
+		
 		$('#imgLarge .exit').on('click', function() {
+			closeImg();
+		});
+		
+		function closeImg() {
 			$('#imgLarge').removeClass('visible');
 			$('#imgLarge').addClass('hidden');
-			$('#imgLarge').fadeOut(300);
-		});
+			$('#imgLarge').fadeOut(300);			
+		}
 	});	
 	//-----------------------------------------------------------------------------------
 	

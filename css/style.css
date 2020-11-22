@@ -26,8 +26,9 @@
 	--white: rgba(255, 255, 255, 1);
 	--black: rgba(0, 0, 0, 1);
 	--darkGray: rgba(31, 31, 31, 1);
-	--05_black: rgba(255, 255, 255, 0.05);
-	--25_black: rgba(255, 255, 255, 0.1);
+	--005_black: rgba(255, 255, 255, 0.05);
+	--010_black: rgba(255, 255, 255, 0.1);
+	--015_black: rgba(255, 255, 255, 0.15);
 	--gray: rgba(26, 26, 26, 1);
 	
 	
@@ -41,7 +42,12 @@ body {
 	padding: 0;
 	color: var(--white);
 	font-family: "mostra-nuova",sans-serif;
-	background-color: black;
+	background-color: var(--black);
+	/*background-image: url("../../portfolio/images/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;*/
 }
 .posts-collection {
     width: 90vw;
@@ -85,12 +91,15 @@ body {
 	display: block;
 	width: 100%;
 	background: var(--blue);
+    min-height: 400px;
+    max-height: 400px;
 }
 .header .slider_content {
-	padding: 150px 20px;
-	position: relative;
-	text-align: center;
-	z-index: 1000000;
+    position: relative;
+    text-align: center;
+    z-index: 1000000;
+    top: 12.5em;
+    transform: translate(0, -3.5em);
 }
 .header .slider_content h1 {
 	margin: 0;
@@ -165,7 +174,6 @@ body {
 /* Mobile Menu */
 /*******************/
 .mobile-menu {padding: 25px 0px;}
-.mobile-menu .translate {border-bottom: 2px solid var(--white);}
 .mobile-menu-wrapper .mobile-menu, .sticky-mobile-menu-wrapper {
 	display: none;
     background-color: var(--gray);
@@ -223,6 +231,17 @@ body {
 /****************/
 /* Single Posts */
 /****************/
+.single-post .vergroot-glas {
+    position: absolute;
+    z-index: 10;
+    font-size: 22px;
+    color: rgb(255 255 255);
+    transform: translate(10px, 10px);
+    background-color: #3a3939;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
 .posts-main-container {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
@@ -235,7 +254,7 @@ body {
 	letter-spacing: 1px;
 	font-weight: 100;
 	font-style: normal;
-	background-color: var(--05_black);
+	background-color: var(--010_black);
 }
 .posts-collection .post-img .content-img {
 	position: relative;
@@ -247,9 +266,9 @@ body {
 }
 .category-ribbon {
     padding: 5px 5px;
-    background-color: var(--darkGray);
+    background-color: var(--015_black);
     border-radius: 0 0 10px 10px;
-    transform: translate(0,-5px);
+    transform: translate(0,-4px);
 }
 
 
@@ -282,9 +301,19 @@ div#imgLarge {
 	padding: 0;
 	margin: 0;
 	transition: all 0.3s;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 100%;
 }
 #imgLarge p.exit:hover {
 	color: var(--darkBlue);
+}
+#imgLarge .background {
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 
