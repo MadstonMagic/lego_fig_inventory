@@ -55,9 +55,9 @@ $(document).ready( function() {
 		var y = $(this).scrollTop();
 		
 		if (y > 800) {
-			$('.toTopWrapper').css("display","block");
+			$('.toTopWrapper').fadeIn(200);
 		} else {
-			$('.toTopWrapper').css("display","none");
+			$('.toTopWrapper').fadeOut(200);
 		}
 	});
 	//-----------------------------------------------------------------------------------
