@@ -270,6 +270,26 @@ body {
 }
 
 
+/*******************/
+/* Progression Bar */
+/*******************/
+.progression {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 40px;
+	width: 100%;
+}
+.progression .image {
+    width: 100%;
+	background-color: var(--010_black);
+}
+.progression .image img {
+	width: 100%;
+	cursor: pointer;
+}
+
+
+
 /*****************/
 /* Larger Images */
 /*****************/
@@ -344,10 +364,6 @@ div#imgLarge {
 	bottom: 0;
 	padding: 0px 15px 15px 15px;
 }
-
-
-
-
 
 
 

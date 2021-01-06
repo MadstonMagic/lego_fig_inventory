@@ -16,7 +16,8 @@ $(document).ready( function() {
 	/* ======================== */		
 	
 	// Pictures on the sub-pages
-	$('.posts-collection .post-img .content-img').on('click', function() {
+	//$('.posts-collection .post-img .content-img').on('click', function() {
+	$('.content-img').on('click', function() {
 		var source = $(this).attr('src');
 		
 		$('#imgLarge img').attr('src', source);
@@ -118,7 +119,10 @@ $(document).ready( function() {
 	$('.mobile-menu .open-menu').on('click', function () {
 		$('.mobile-menu .menuList').slideToggle();
 	});
+	
+	
 })
+
 
 
 
