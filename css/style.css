@@ -342,8 +342,9 @@ div#imgLarge {
 }
 .tips {
     position: absolute;
-    top: 338px;
+    top: 325px;
     left: 0;
+    font-size: 20px;
     padding-left: 25px;
     padding-right: 25px;
     background: rgb(0 0 0);
