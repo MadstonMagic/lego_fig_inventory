@@ -249,7 +249,7 @@ body {
 .all.single-post, .single-post {
     width: 100%;
 	font-family: conglomerate, sans-serif;
-    min-height: 1050px;
+    padding-bottom: 200px;
 	letter-spacing: 1px;
 	font-weight: 100;
 	font-style: normal;
@@ -314,7 +314,7 @@ div#imgLarge {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 65%;
+	width: 60%;
 }
 #imgLarge p.exit {
     font-size: 58px;
@@ -347,6 +347,9 @@ div#imgLarge {
     padding-left: 25px;
     padding-right: 25px;
     background: rgb(0 0 0);
+}
+.tips h4 {
+    font-weight: 300;
 }
 
 /****************/
