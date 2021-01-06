@@ -249,10 +249,12 @@ body {
 .all.single-post, .single-post {
     width: 100%;
 	font-family: conglomerate, sans-serif;
+    min-height: 1050px;
 	letter-spacing: 1px;
 	font-weight: 100;
 	font-style: normal;
 	background-color: var(--010_black);
+    position: relative;
 }
 .posts-collection .post-img .content-img {
 	position: relative;
@@ -267,6 +269,11 @@ body {
     background-color: var(--015_black);
     border-radius: 0 0 10px 10px;
     transform: translate(0,-4px);
+}
+.process {
+    position: absolute;
+    bottom: 0;
+	padding: 15px;
 }
 
 
@@ -333,7 +340,14 @@ div#imgLarge {
 	top: 0;
 	left: 0;
 }
-
+.tips {
+    position: absolute;
+    top: 338px;
+    left: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: rgb(0 0 0);
+}
 
 /****************/
 /* Custom Links */

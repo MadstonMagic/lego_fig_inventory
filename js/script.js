@@ -98,6 +98,7 @@ $(document).ready( function() {
 		count = 0;
 		textArray = [
 			'Online known as: MadstonMagic<br><br>',
+			'Tip: Klik op de afbeeldingen om ze te vergroten!<br><br>',
 			'3D modeler of Minecraft Java models<br><br>',
 			'Road to Professional modeler<br><br>',
 			'Mission: Get accepted to the<br> Game Art Education <i class="fad fa-times-square" style="color:red;font-size:24px;"></i><br>',
