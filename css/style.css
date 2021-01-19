@@ -387,6 +387,29 @@ div#imgLarge {
 
 
 
+/************************/
+/****** Video Page ******/
+/************************/
+.video-body {
+	margin:0;
+	padding: 20px;
+}
+.menuHome ul.menuList {
+    display: inline-block;
+    list-style-type: none;
+	cursor: pointer;
+	margin:0;padding:0;
+	width: 100%;
+}
+.menuHome ul.menuList li {color: var(--white);transition: all 0.3s;display:inline-block;}
+.menuHome ul.menuList li.back_to_home:hover {color: var(--blue);}
+.body_full video.video-intake {width: 80%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:-1}
+.body_full video.video-intake:focus {outline:none;}
+.menuList .right {float:right;}
+
+
+
+
 
 
 
